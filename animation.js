@@ -44,43 +44,13 @@ window.onload = setTimeout(function () {
         element: document.querySelector(".section-skills"),
         handler: function () {
             anime({
-                targets: ".cell-skills",
+                targets: ".skills",
                 opacity: 1,
                 easing: 'easeInOutExpo',
                 delay: anime.stagger(100)
             })
-
-            anime({
-                targets: '.x-axis-title',
-                opacity: 1,
-                easing: 'easeInOutQuad',
-                delay: 500
-            })
-
-            anime({
-                targets: '.x-axis-title',
-                bottom: '0px',
-                easing: 'easeInOutQuad',
-                delay: 1000,
-                duration: 500
-            })
-
-            anime({
-                targets: '.y-axis-title',
-                opacity: 1,
-                easing: 'easeInOutQuad',
-                delay: 500
-            })
-
-            anime({
-                targets: '.y-axis-title',
-                right: 0,
-                easing: 'easeInOutQuad',
-                delay: 1000,
-                duration: 500
-            })
         },
-        offset: 100
+        offset: 10
     })
 
     var waypointReflect = new Waypoint({
@@ -88,51 +58,30 @@ window.onload = setTimeout(function () {
         handler: function () {
             anime({
                 targets: ".section-reflect-img",
-                width: ['50%'],
+                height: ['100%'],
                 easing: 'easeInOutExpo',
-                delay: 500
+                duration: 2500
             })
-
             var reflectAnimText1 = anime.timeline({
                     easing: 'easeInOutQuad',
-                    duration: 1000
+                    delay: 2600
                 })
                 .add({
-                    targets: '.section-reflect-body',
+                    targets: ".section-reflect-body",
                     opacity: 1,
-                    delay: 1200
+                    duration: 1000
                 })
-
             var reflectAnimText2 = anime.timeline({
                     easing: 'easeInOutQuad',
-                    duration: 1000
+                    delay: 2800
                 })
                 .add({
-                    targets: '.section-reflect-body',
-                    top: '30%',
-                    delay: 1200
-                })
-            var reflectAnimText3 = anime.timeline({
-                    easing: 'easeInOutQuad',
-                    duration: 1000
-                })
-                .add({
-                    targets: '.section-reflect-sub',
+                    targets: ".section-reflect-sub",
                     opacity: 1,
-                    delay: 1800
-                })
-
-            var reflectAnimText4 = anime.timeline({
-                    easing: 'easeInOutQuad',
                     duration: 1000
-                })
-                .add({
-                    targets: '.section-reflect-sub',
-                    top: '40%',
-                    delay: 1800
                 })
         },
-        offset: 100
+        offset: '50%'
     })
 
     var waypointMap = new Waypoint({
