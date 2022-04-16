@@ -1,0 +1,462 @@
+html {
+    width: 100%;
+}
+
+body {
+    margin: auto;
+    overflow: hidden;
+}
+
+.section {
+    width: auto;
+    height: 100vh;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.break-skills {
+    flex-basis: auto;
+    height: 0;
+}
+
+.section-landing-img {
+    height: 100%;
+    background-image: url(img/fyc-mockup-cover-web.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    background-color: #ffffff;
+    opacity: 0;
+}
+
+.section-landing-copy {
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    position: inherit;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    grid-gap: clamp(8px, 1vw, 12px);
+    font-size: clamp(2rem, 7vw, 7rem);
+}
+
+.anim-header-landing {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.anim-body-landing {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    opacity: 0;
+    font-size: clamp(1rem, 2vw, 1.7rem);
+    max-width: 600px;
+    margin: 0 auto 0 0;
+}
+
+.section-learning {
+    height: auto;
+}
+
+.section-learning-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #060606;
+
+}
+
+.anim-container-learning {
+    height: 100vh;
+    width: auto;
+
+}
+
+.anim-container-learning {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: left;
+    font-size: clamp(1.7rem, 5vw, 6rem);
+    color: rgb(245, 245, 245);
+}
+
+.anim-body-learning {
+    width: 80%;
+}
+
+.anim-sub-learning {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 2vw, 1.7rem);
+    max-width: 600px;
+}
+
+.learning-img1 {
+    width: 100%;
+    /*    height: auto;*/
+    background-image: url(img/fyc-mockup-intro1-web.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-color: white;
+}
+
+.learning-img2 {
+    width: 100%;
+    /*    height: auto;*/
+    background-image: url(img/fyc-mockup-intro2-web.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.section-skills-canvas {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.anim-evalgrid-skills {
+    display: flex;
+    align-items: center;
+}
+
+.anim-skills-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: left;
+    font-size: clamp(1.7rem, 5vw, 6rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width: 80%;
+}
+
+.anim-skills-title {
+    display: inline-flex;
+}
+
+.skills-letter {
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+.anim-skills-sub {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 2vw, 1.7rem);
+    opacity: 0;
+    max-width: 600px;
+}
+
+.skills {
+    position: absolute;
+    height: auto;
+    width: 50%;
+    opacity: 0;
+    margin: 0 auto;
+}
+
+.section-reflect {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+    /*    position: relative;*/
+    height: 50vh;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #060606;
+}
+
+.section-reflect-img {
+    background-image: url(img/fyc-mockup-yrn-web.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    background-color: #ffffff;
+    width: auto;
+    height: 100vh;
+}
+
+.section-reflect-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    opacity: 1;
+    margin: 0 auto;
+    font-size: clamp(1.7rem, 5vw, 6rem);
+    height: 50vh;
+    color: rgb(245, 245, 245);
+}
+
+.section-reflect-sub {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    opacity: 1;
+    font-size: clamp(1rem, 2vw, 1.7rem);
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.section-map {}
+
+.section-map-canvas {
+    display: grid;
+    height: 100vh;
+}
+
+.anim-graph-map {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.roadmap {
+    opacity: 0;
+    height: auto;
+    margin: 0 auto;
+    width: 90%;
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+}
+
+.roadmap-start,
+.roadmap-end,
+.roadmap-current,
+.roadmap-next {
+    z-index: 10;
+
+}
+
+.roadmap-startnum,
+.roadmap-endnum,
+.roadmap-currentnum,
+.roadmap-nextnum {
+    z-index: 20;
+}
+
+.roadmap-currentline,
+.roadmap-nextline {
+    z-index: 30;
+}
+
+.section-map-body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.7rem, 5vw, 6rem);
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.section-map-sub {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: clamp(1rem, 2vw, 1.7rem);
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+.section-cta {
+    background-image: url(img/fyc-mockup-cover2-web.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    height: 100%;
+    width: auto;
+}
+
+.section-cta-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
+}
+
+.section-cta-header {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.7rem, 5vw, 6rem);
+    align-items: center;
+    /*    height: 50vh;*/
+    height: 95vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-cta-body {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: clamp(1rem, 2vw, 1.7rem);
+    /*    height: 50vh;*/
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.section-cta-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(1rem, 2vw, 1.7rem);
+    margin-top: clamp(32px, 1vw, 48px);
+}
+
+@media screen and (max-width: 1400px) {
+    .section-landing-img {
+        background-size: auto 80%;
+    }
+
+    .section-landing-copy {
+        align-content: flex-end;
+        height: 95vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section-landing-img {
+        background-image: url(img/fyc-mockup-cover-web-mobile.png);
+        background-position: center right;
+        background-size: cover;
+    }
+
+    .section-landing-copy {
+        align-content: flex-end;
+        height: 95vh;
+    }
+
+    .section-learning-imgs {
+        grid-template-columns: 1fr;
+    }
+
+    .anim-body-learning {
+        height: 50vh;
+    }
+
+    .learning-img1,
+    .learning-img2 {
+        height: 50vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .section-skills-canvas {
+        grid-template-columns: 1fr;
+        height: 70vh;
+    }
+
+    .anim-skills-body {
+        height: 50vh;
+    }
+
+
+    .skills {
+        width: 100%;
+    }
+
+    .section-map {}
+
+    .anim-graph-map {
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .roadmap {
+        width: 100%;
+    }
+
+    .section-map-canvas {}
+
+    .section-reflect-body {
+        align-items: flex-start;
+        text-align: left;
+        width: 80%;
+    }
+
+    .section-reflect-sub {}
+
+    .section-map-body {
+        align-items: flex-start;
+        text-align: left;
+        width: 80%;
+    }
+
+    .section-cta {
+        background-image: url(img/fyc-mockup-cover2-web-mobile.png);
+        background-size: cover;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .section-landing-img {
+        background-image: url(img/fyc-mockup-cover-web-mobile.png);
+        background-position: center left;
+        background-size: cover;
+        /*
+        height: 100%;
+        width: auto;
+*/
+    }
+
+    .anim-header-landing {
+        /*        display: none;*/
+    }
+
+    .section-landing-copy {
+        align-content: flex-end;
+        height: 95vh;
+    }
+
+    .anim-body-learning {
+        font-size: clamp(1rem, 2vw, 1.7rem);
+
+    }
+
+    .anim-sub-learning {
+        font-size: clamp(1rem, 2vw, 1.7rem);
+    }
+
+    .anim-skills-sub {
+        font-size: clamp(1rem, 2vw, 1.7rem);
+
+    }
+
+    .section-reflect-sub {
+        font-size: clamp(1rem, 2vw, 1.7rem);
+
+    }
+
+    .section-map-sub {
+        font-size: clamp(1rem, 2vw, 1.7rem);
+
+    }
+
+    .section-cta-body {
+        font-size: clamp(1rem, 2vw, 1.7rem);
+    }
+}
