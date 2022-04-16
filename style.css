@@ -324,6 +324,10 @@ body {
     margin-top: clamp(32px, 1vw, 48px);
 }
 
+.section-cta-download a {
+    color: #000000;
+}
+
 @media screen and (max-width: 1400px) {
     .section-landing-img {
         background-size: auto 80%;
